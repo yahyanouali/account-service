@@ -15,11 +15,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.OK;
 
-public class MoneyTransferFunctionalTest extends CommonFunctionalTest {
+class MoneyTransferFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Create account works successfully")
-  public void shouldCreateAccountsWorksSuccessfully() {
+  void shouldCreateAccountsWorksSuccessfully() {
     final var sender = "123456789";
     final var receiver = "123456788";
     final var result = postMoneyTransferAccountSuccessfully(sender, receiver);

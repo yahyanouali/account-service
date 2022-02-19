@@ -2,7 +2,8 @@ package com.account.service.api;
 
 import com.account.service.api.dto.MoneyTransferRequest;
 import com.account.service.api.dto.MoneyTransferResponse;
-import com.account.service.service.AccountUseCase;
+import com.account.service.api.mapper.AccountApiConverter;
+import com.account.service.domain.service.AccountUseCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;

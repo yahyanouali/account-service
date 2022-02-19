@@ -7,8 +7,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
-import static com.account.service.repository.RepositoryConverter.toTransfer;
-import static com.account.service.repository.RepositoryConverter.toTransferEntity;
+import static com.account.service.repository.mapper.RepositoryConverter.toTransfer;
+import static com.account.service.repository.mapper.RepositoryConverter.toTransferEntity;
 
 @Slf4j
 @Repository

@@ -1,4 +1,4 @@
-package com.account.service.api;
+package com.account.service.api.mapper;
 
 import com.account.service.api.dto.AccountRequest;
 import com.account.service.api.dto.AccountResponse;
@@ -6,8 +6,8 @@ import com.account.service.api.dto.MoneyTransferRequest;
 import com.account.service.api.dto.MoneyTransferResponse;
 import com.account.service.domain.Account;
 import com.account.service.domain.Transfer;
-import com.account.service.service.command.CreateAccountCommand;
-import com.account.service.service.command.SendMoneyCommand;
+import com.account.service.domain.service.command.CreateAccountCommand;
+import com.account.service.domain.service.command.SendMoneyCommand;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

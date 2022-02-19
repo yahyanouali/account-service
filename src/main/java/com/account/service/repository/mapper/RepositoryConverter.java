@@ -1,4 +1,4 @@
-package com.account.service.repository;
+package com.account.service.repository.mapper;
 
 import com.account.service.domain.Account;
 import com.account.service.domain.Transfer;

@@ -1,7 +1,7 @@
-package com.account.service.service;
+package com.account.service.domain.service.mapper;
 
 import com.account.service.repository.command.InsertAccountCommand;
-import com.account.service.service.command.CreateAccountCommand;
+import com.account.service.domain.service.command.CreateAccountCommand;
 import lombok.experimental.UtilityClass;
 
 import java.math.BigInteger;

@@ -8,8 +8,8 @@ import lombok.Value;
 @EqualsAndHashCode(callSuper = true)
 @Builder
 public class ErrorResultException extends RuntimeException {
-  private String type;
-  private String code;
-  private String message;
-  private int status;
+  String type;
+  String code;
+  String message;
+  int status;
 }

@@ -4,6 +4,7 @@ import com.account.service.domain.Account;
 import com.account.service.repository.command.InsertAccountCommand;
 import com.account.service.repository.command.UpdateAccountCommand;
 import com.account.service.repository.jpa.AccountJpaRepository;
+import com.account.service.repository.mapper.RepositoryConverter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
@@ -12,8 +13,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static com.account.service.repository.RepositoryConverter.toAccount;
-import static com.account.service.repository.RepositoryConverter.toAccountEntity;
+import static com.account.service.repository.mapper.RepositoryConverter.toAccount;
+import static com.account.service.repository.mapper.RepositoryConverter.toAccountEntity;
 
 @Slf4j
 @Repository

@@ -10,11 +10,11 @@ import java.time.Instant;
 @Value
 @Builder
 public class AccountResponse {
-  private Long id;
-  private String accountId;
-  private String name;
-  private String owner;
-  private BigInteger balance;
-  private Instant createdAt;
+  Long id;
+  String accountId;
+  String name;
+  String owner;
+  BigInteger balance;
+  Instant createdAt;
 
 }

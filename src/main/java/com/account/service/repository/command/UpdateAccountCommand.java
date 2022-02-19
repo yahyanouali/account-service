@@ -10,9 +10,9 @@ import java.math.BigInteger;
 @Builder
 @With
 public class UpdateAccountCommand {
-  private Long id;
-  private String accountId;
-  private String name;
-  private String owner;
-  private BigInteger balance;
+  Long id;
+  String accountId;
+  String name;
+  String owner;
+  BigInteger balance;
 }

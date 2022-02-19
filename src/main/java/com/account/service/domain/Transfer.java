@@ -10,11 +10,11 @@ import java.time.Instant;
 @Value
 @Builder
 public class Transfer {
-  private Long id;
-  private String senderAccountId;
-  private String receiverAccountId;
-  private BigInteger amount;
-  private TransferResult result;
-  private String detail;
-  private Instant createdAt;
+  Long id;
+  String senderAccountId;
+  String receiverAccountId;
+  BigInteger amount;
+  TransferResult result;
+  String detail;
+  Instant createdAt;
 }

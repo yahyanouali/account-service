@@ -10,8 +10,8 @@ import java.math.BigInteger;
 @Builder
 @With
 public class InsertAccountCommand {
-  private String accountId;
-  private String name;
-  private String owner;
-  private BigInteger balance;
+  String accountId;
+  String name;
+  String owner;
+  BigInteger balance;
 }

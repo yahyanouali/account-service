@@ -1,4 +1,4 @@
-package com.account.service.api.dto;
+package com.account.service.domain.service.command;
 
 import lombok.Builder;
 import lombok.Value;
@@ -8,7 +8,7 @@ import java.math.BigInteger;
 
 @Value
 @Builder
-public class MoneyTransferRequest {
+public class SendMoneyCommand {
   @NotNull String senderAccountId;
   @NotNull String receiverAccountId;
   @NotNull BigInteger amount;

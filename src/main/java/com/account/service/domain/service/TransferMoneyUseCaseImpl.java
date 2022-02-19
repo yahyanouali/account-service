@@ -1,4 +1,4 @@
-package com.account.service.service;
+package com.account.service.domain.service;
 
 import com.account.service.domain.ErrorCode;
 import com.account.service.domain.ErrorResultException;
@@ -8,7 +8,7 @@ import com.account.service.repository.AccountRepository;
 import com.account.service.repository.command.InsertTransferCommand;
 import com.account.service.repository.TransferRepository;
 import com.account.service.repository.command.UpdateAccountCommand;
-import com.account.service.service.command.SendMoneyCommand;
+import com.account.service.domain.service.command.SendMoneyCommand;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

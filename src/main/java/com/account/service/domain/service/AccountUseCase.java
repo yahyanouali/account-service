@@ -1,9 +1,9 @@
-package com.account.service.service;
+package com.account.service.domain.service;
 
 import com.account.service.domain.Account;
 import com.account.service.domain.Transfer;
-import com.account.service.service.command.CreateAccountCommand;
-import com.account.service.service.command.SendMoneyCommand;
+import com.account.service.domain.service.command.CreateAccountCommand;
+import com.account.service.domain.service.command.SendMoneyCommand;
 
 import javax.validation.Valid;
 import java.util.List;

@@ -6,8 +6,8 @@ import lombok.Value;
 @Value
 @Builder
 public class ErrorResponse {
-  private String type;
-  private String code;
-  private int status;
-  private String message;
+  String type;
+  String code;
+  int status;
+  String message;
 }

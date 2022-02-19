@@ -18,11 +18,11 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.OK;
 
-public class AccountFunctionalTest extends CommonFunctionalTest {
+class AccountFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Create account works successfully")
-  public void shouldCreateAccountsWorksSuccessfully() {
+  void shouldCreateAccountsWorksSuccessfully() {
     final var result = postCreateAccountSuccessfully("12345678");
 
     assertNotNull(result.getId());
@@ -34,7 +34,7 @@ public class AccountFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Retrieve account list works successfully")
-  public void shouldRetrieveAccountsWorksSuccessfully() {
+  void shouldRetrieveAccountsWorksSuccessfully() {
     final var result = getAccountsSuccessfully();
 
     assertNotNull(result.getAccounts());
@@ -52,7 +52,7 @@ public class AccountFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Retrieve account by id works successfully")
-  public void shouldRetrieveAccountByIdWorksSuccessfully() {
+  void shouldRetrieveAccountByIdWorksSuccessfully() {
     final var result = getAccountByIdSuccessfully(1L);
 
     assertEquals(1L, result.getId());
@@ -64,7 +64,7 @@ public class AccountFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Retrieve by id returns not found error for non exist account id")
-  public void shouldRetrieveByIdReturnNonFound() {
+  void shouldRetrieveByIdReturnNonFound() {
     final var result = getAccountByIdNotFound(99999L);
 
     assertEquals(NOT_FOUND.value(), result.getStatus());
@@ -75,7 +75,7 @@ public class AccountFunctionalTest extends CommonFunctionalTest {
 
   @Test
   @DisplayName("Delete account works successfully")
-  public void shouldDeleteUserWorksSuccessfully() {
+  void shouldDeleteUserWorksSuccessfully() {
     final var created = postCreateAccountSuccessfully("ABCDEFG");
     deleteAccountSuccessfully(created.getId());
     final var result = getAccountByIdNotFound(created.getId());

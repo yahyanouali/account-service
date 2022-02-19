@@ -1,11 +1,12 @@
-package com.account.service.service;
+package com.account.service.domain.service;
 
 import com.account.service.domain.Account;
 import com.account.service.domain.ErrorCode;
 import com.account.service.domain.Transfer;
+import com.account.service.domain.service.command.CreateAccountCommand;
+import com.account.service.domain.service.mapper.AccountServiceConverter;
 import com.account.service.repository.AccountRepository;
-import com.account.service.service.command.CreateAccountCommand;
-import com.account.service.service.command.SendMoneyCommand;
+import com.account.service.domain.service.command.SendMoneyCommand;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

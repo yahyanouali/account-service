@@ -10,10 +10,10 @@ import java.time.Instant;
 @Value
 @Builder
 public class MoneyTransferResponse {
-  private Long id;
-  private String senderAccountId;
-  private String receiverAccountId;
-  private BigInteger amount;
-  private TransferResult result;
-  private Instant timeStamp;
+  Long id;
+  String senderAccountId;
+  String receiverAccountId;
+  BigInteger amount;
+  TransferResult result;
+  Instant timeStamp;
 }
